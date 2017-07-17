@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nobel Prizes</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="libraries/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="libraries/awesome-markers/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="libraries/awesome-markers/leaflet.awesome-markers.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+<body>
+    <h1>Nobel Prizes</h1>
+    <div id="map"></div>
+    <div id="graphs">
+        <div id="stackedbar">
+            <h3>Number of Laureates over the years</h3>
+            <div id="graph"></div>
+        </div>
+       <div id="genderController">
+           <h3>Gender Distribution</h3>
+           <div id="piechart"></div>
+               <div id = "yearController">
+                   <p>
+                       <label for="yearRange">Year:</label>
+                       <input type="text" id="yearRange" readonly>
+                   </p>
+                   <div id="slider-range"></div>
+               </div>
+       </div>
+
+    </div>
+
+
+
+    <script src="js/markers.js"></script>
+    <script src="js/map.js"></script>
+
+
+
+</body>
+</html>
